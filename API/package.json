@@ -1,0 +1,21 @@
+{
+  "name": "app-api",
+  "version": "1.0.0",
+  "description": "API rest para ser usada en la aplicacion de parqueaderos de la universidad de Medellin",
+  "main": "package.json",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "app",
+    "api"
+  ],
+  "author": "Alejandro García Serna <alejogs4@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongoose": "^5.0.8"
+  }
+}
