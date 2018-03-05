@@ -7,5 +7,6 @@ const pc = new parkingController()
 
 parking.get( '/api/v1/incomes',pc.getAll )
 parking.post( '/api/v1/incomes/registry',pc.registryNewParking )
+parking.put( '/api/v1/incomes/:id',pc.updateParking )
 
 module.exports = parking

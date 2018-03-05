@@ -6,13 +6,17 @@ class parkingModel {
     }
 
     registryNewParking( data,cb ) {
-        console.log(data)
         let income = new incomeSchema()
+        income.placa = data.placa
         income.price = data.price
         income.place = data.place
         income.type = data.type
 
         income.save(cb)
+    }
+
+    updateParking( id,data,cb ) {
+        incomeSchema.findByIdAndUpdate(id,data,cb)
     }
 }
 
