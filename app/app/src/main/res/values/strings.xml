@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Parqueaderos UDEM</string>
+    <string name="search">Consultar</string>
+    <string name="income">Registrar ingreso</string>
+    <string name="income_registry_title">Registra una entrada</string>
+    <string name="vehicle">Placa del vehiculo</string>
+    <string name="engineering">Ingenierias</string>
+    <string name="administration">Administracion</string>
+    <string name="sport">Zona deportiva</string>
+    <string name="motorcycle">Zona para motos</string>
+    <string name="car">Carro</string>
+    <string name="type_motorcycle">Moto</string>
+
+    <string name="place_text">Escoja el lugar donde ira el vehiculo</string>
+    <string name="type_text">¿Que tipo de vehiculo es?</string>
+</resources>
