@@ -17,5 +17,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".RegistryActivity" />
+        <activity android:name=".IncomeReport" />
     </application>
 </manifest>

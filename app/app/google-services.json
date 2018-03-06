@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "166979415241",
+    "firebase_url": "https://entradas-universidad.firebaseio.com",
+    "project_id": "entradas-universidad",
+    "storage_bucket": "entradas-universidad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:166979415241:android:83f6336a1a1fd51e",
+        "android_client_info": {
+          "package_name": "com.ags.agsmvmm.parqueaderosudem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "166979415241-vnk3s2is2qdnathm311hibfmgsr6lf72.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkMDQRAxfm4wcmAo4PSyq7ATkYzQbkX6U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
