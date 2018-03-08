@@ -18,5 +18,7 @@
         </activity>
         <activity android:name=".RegistryActivity" />
         <activity android:name=".IncomeReport" />
+        <activity android:name=".IncomesResults" />
+        <activity android:name=".SearchAdvanced" />
     </application>
 </manifest>

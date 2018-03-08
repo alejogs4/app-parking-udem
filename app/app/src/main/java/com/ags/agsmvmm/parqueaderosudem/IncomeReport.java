@@ -32,24 +32,33 @@ public class IncomeReport extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.income_data);
-
         connectViews();
+
+        Bundle extras = getIntent().getExtras();
+        String key = extras.getString("key");
+
         final FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference ref = database.getReference();
+        DatabaseReference ref = database.getReference().child(key);
         ref.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 Income income = dataSnapshot.getValue(Income.class);
-                Toast.makeText(IncomeReport.this,income.getDate(),Toast.LENGTH_SHORT).show();
-                System.out.println(income.getId());
+                fillTextViews(income);
             }
-
             @Override
             public void onCancelled(DatabaseError databaseError) {
 
             }
         });
 
+    }
+
+    private void fillTextViews(Income income) {
+     vehicleId.setText(vehicleId.getText().toString() + "" + income.getId());
+     vehiclePlace.setText(vehiclePlace.getText().toString() + "" + income.getPlace());
+     incomePrice.setText(incomePrice.getText().toString() + "" + income.getPrice());
+     vehicleType.setText(vehicleType.getText().toString() + "" + income.getType());
+     incomeDate.setText(incomeDate.getText().toString() + "" + income.getDate());
     }
 
     private void connectViews() {

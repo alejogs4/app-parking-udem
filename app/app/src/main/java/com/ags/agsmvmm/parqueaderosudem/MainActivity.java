@@ -18,6 +18,14 @@ public class MainActivity extends AppCompatActivity {
 
         connectViews();
 
+        buttonSearch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,IncomesResults.class);
+                startActivity(intent);
+            }
+        });
+
         buttonRegistryIncome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -13,4 +13,5 @@
 
     <string name="place_text">Escoja el lugar donde ira el vehiculo</string>
     <string name="type_text">¿Que tipo de vehiculo es?</string>
+    <string name="income_result_title">Carros en el parqueadero</string>
 </resources>

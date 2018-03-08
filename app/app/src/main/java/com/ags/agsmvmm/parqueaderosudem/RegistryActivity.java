@@ -44,9 +44,10 @@ public class RegistryActivity extends AppCompatActivity {
                     return;
                 }
                 Income income = new Income(vehicleIdentification.getText().toString(),setPlace(),setType());
-                reference.child("entradas-universidad").child(income.getId()).setValue(income);
+                reference.child(income.getId()).setValue(income);
                 Toast.makeText(RegistryActivity.this,"Registro exitoso",Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getApplicationContext(),IncomeReport.class);
+                intent.putExtra("key",income.getId());
                 startActivity(intent);
             }
         });
